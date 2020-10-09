@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .set-witdh{
+        width: 60%;
+        margin: 0 auto;
+
+    }
+    .menu-parent{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .menu-parent > li
+    {
+        text-align:  center;
+        width: 200px;
+        list-style: none;
+    }
+    .menu-child{
+        display: none;
+    }
+    .menu-child > li{
+        list-style: none;
+        width: 250px;
+    }
+    .menu-parent li:hover > .menu-child{
+        display: block;
+    }
+    .menu-parent li p{
+        background-color: #8fd19e;
+        padding: 20px;
+    }
+
+
+</style>
+<body>
+    <div class="set-witdh">
+        <ul class="menu-parent">
+            <li>
+                <p>Trang chủ</p>
+            </li>
+            <li>
+                <p>Cửa hàng</p>
+                <ul class="menu-child">
+                    <li>
+                        <p>Giày nam</p>
+                    </li>
+                    <li>
+                        <p>Giày nữ</p>
+                    </li>
+                    <li>
+                        <p>Giày trẻ em</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Tin tức</p>
+            </li>
+            <li>
+                <p>Liên hệ</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
